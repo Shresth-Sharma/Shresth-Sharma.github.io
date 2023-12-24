@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Shresth._.Sharma</title>
+        <style>
+            #content{
+                display:none;
+            }
+            #loading{
+                position:absolute;
+                left:50%;
+                top:50%;
+                transform: translate(-50%, -50%);
+            }
+            .l{
+                position:absolute;
+                width:1.5vw;
+                height:1.5vw;
+                border-radius:50%;
+                background-color:white;
+                transform: translate(0, -30px);
+            }
+            #l1{
+                animation: load1 1.5s ease-in-out infinite;
+            }
+            #l2{
+                animation: load2 1.5s ease-in-out infinite;
+            }
+            #l3{
+                animation: load3 1.5s ease-in-out infinite;
+            }
+            #l4{
+                animation: load4 1.5s ease-in-out infinite;
+            }
+            #l5{
+                animation: load5 1.5s ease-in-out infinite;
+            }
+            @keyframes load1{
+                0% {
+                    transform: rotate(0deg) translateX(0) translateY(-80px);
+                }
+                66.66% {
+                    transform: rotate(360deg) translateX(0) translateY(0px);
+                    background-color:blueviolet;
+                }
+                100%{
+                    transform: rotate(360deg) translateX(0) translateY(0px);
+                    background-color:white;
+                }
+            }
+            @keyframes load2{
+                0% {
+                    transform: rotate(0deg) translateX(0) translateY(0px);
+                }
+                6.66% {
+                    transform: rotate(0deg) translateX(0) translateY(-80px);
+                }
+                73.32% {
+                    transform: rotate(360deg) translateX(0) translateY(0px);
+                    background-color:blueviolet;
+                }
+                100%{
+                    transform: rotate(360deg) translateX(0) translateY(0px);
+                    background-color:white;
+                }
+            }
+            @keyframes load3{
+                0% {
+                    transform: rotate(0deg) translateX(0) translateY(0px);
+                }
+                13.32% {
+                    transform: rotate(0deg) translateX(0) translateY(-80px);
+                }
+                79.98% {
+                    transform: rotate(360deg) translateX(0) translateY(0px);
+                    background-color:blueviolet;
+                }
+                100%{
+                    transform: rotate(360deg) translateX(0) translateY(0px);
+                    background-color:white;
+                }
+            }
+            @keyframes load4{
+                0% {
+                    transform: rotate(0deg) translateX(0) translateY(0px);
+                }
+                19.98% {
+                    transform: rotate(0deg) translateX(0) translateY(-80px);
+                }
+                86.64% {
+                    transform: rotate(360deg) translateX(0) translateY(0px);
+                    background-color:blueviolet;
+                }
+                100%{
+                    transform: rotate(360deg) translateX(0) translateY(0px);
+                    background-color:white;
+                }
+            }
+            @keyframes load5{
+                0% {
+                    transform: rotate(0deg) translateX(0) translateY(0px);
+                }
+                26.64% {
+                    transform: rotate(0deg) translateX(0) translateY(-80px);
+                }
+                93.3% {
+                    transform: rotate(360deg) translateX(0) translateY(0px);
+                    background-color:blueviolet;
+                }
+                100%{
+                    transform: rotate(360deg) translateX(0) translateY(0px);
+                    background-color:white;
+                }
+            }
+            #content{
+                display:none;
+            }
+        </style>             
+        <link rel="stylesheet" type="text/css" href="../css/top.css">
+        <link rel="stylesheet" type="text/css" href="../css/feed.css">
+        <link rel="shortcut icon" href="../Images/logo.png">
+    </head>
+    <body style = 'color:white;'>
+        <script>
+            document.addEventListener('contextmenu', function(e) {
+              e.preventDefault();
+            });
+            </script>
+            
+        <script>
+            document.addEventListener("keydown", function(event) {
+              if (event.ctrlKey && event.key === 'u') {
+                // alert("Ctrl+U Pressed!");
+                event.preventDefault();
+            }
+            
+            if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+                // alert("Ctrl+Shift+I Pressed!");
+                event.preventDefault();
+              }
+            });
+        </script>
+        <div id="loading">
+            <div id="l1" class="l"></div>
+            <div id="l2" class="l"></div>
+            <div id="l3" class="l"></div>
+            <div id="l4" class="l"></div>
+            <div id="l5" class="l"></div>
+        </div>
+        <div id="content">
+            <span id="nav">
+                <div>
+                    <p id="name">Shresth._.Sharma</p>
+                    <!-- <button class="navbt" id="signinbt" onclick="window.open('../html/signin.html','_top')">Sign In</button> -->
+                    <button class="navbt" id="themechangebt"><img src="../Images/moon.png" id="themechangebtimg" onclick="changetheme()"></button>
+                <button class="navbt1" id="feedback" onclick="window.open('../html/feedback.html','_top')">Feedback</button>
+                <button class="navbt1" id="mygear" onclick="window.open('../html/mygear.html','_top')">My gear</button>
+                <button class="navbt1" id="contact" onclick="window.open('../html/contact.html','_top')">Contact</button>
+                <button class="navbt1" id="about" onclick="window.open('../html/about.html','_top')">About Me</button>
+                <button class="navbt1" id="home" onclick="window.open('../pc.html','_top')">Home</button>
+            </div>
+        </span>
+        <br>
+        <br>
+        <br>
+        <div id="between">
+            <h1 id="between1">Welcome to</h1>
+            <h1 id="between2">Shresth._.Sharma Feedback</h1>
+            <h1 id="between3">Shresth._.Sharma Website</h1>
+        </div>
+        <img id="mainphoto" src="../Images/photo.png">
+        <span>
+            <div id="bottom">
+                <img id="bottomimg" src="../Images/logo.png">
+                <p id="bottomname">Shresth._.Sharma</p>
+                <p id="bottomname2">|</p>
+                <p id="bottomname3">Copyright © 2023 Shresth._.Sharma</p>
+                <a href="https://www.instagram.com/Shresth.Sharma_/"><img id="bottominstaimg" src="../Images/instaw.png"></a>
+                <a href="https://www.github.com/Shresth-Sharma-2008/"><img id="bottomgitimg" src="../Images/gitw.png"></a>
+            </div>
+        </span>
+        <!-- <iframe id="feed" src="https://docs.google.com/forms/d/e/1FAIpQLSc967LSiksBl541ziWokSSpgPYpBDsrs_3T2yzjegbkXLeuhQ/viewform?embedded=true" width="640" height="414" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+        <iframe id="feed" src="https://docs.google.com/forms/d/e/1FAIpQLSc967LSiksBl541ziWokSSpgPYpBDsrs_3T2yzjegbkXLeuhQ/viewform?embedded=true" width="640" height="1015" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <script src="../js/feed.js"></script>
+    </div>
+    <script>
+        // window.addEventListener('load', function(){
+        //     document.getElementById('loading').style.display = 'none';
+        //     document.getElementById('content').style.display = 'block';
+        // });
+        window.onload = function(){
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+            console.log("The video is completely loaded.");  
+        }
+        // Find your video element by its ID or any other method you prefer
+    </script>
+    </body>
+</html>

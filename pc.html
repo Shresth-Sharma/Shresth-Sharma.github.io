@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shresth Sharma</title>
+    <style>
+        
+        #content{
+            display:none;
+        }
+        #loading{
+            position:absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50%, -50%);
+        }
+        .l{
+            position:absolute;
+            width:1.5vw;
+            height:1.5vw;
+            border-radius:50%;
+            background-color:white;
+            transform: translate(0, -30px);
+        }
+        #l1{
+            animation: load1 1.5s ease-in-out infinite;
+        }
+        #l2{
+            animation: load2 1.5s ease-in-out infinite;
+        }
+        #l3{
+            animation: load3 1.5s ease-in-out infinite;
+        }
+        #l4{
+            animation: load4 1.5s ease-in-out infinite;
+        }
+        #l5{
+            animation: load5 1.5s ease-in-out infinite;
+        }
+        @keyframes load1{
+            0% {
+                transform: rotate(0deg) translateX(0) translateY(-80px);
+            }
+            66.66% {
+                transform: rotate(360deg) translateX(0) translateY(0px);
+                background-color:blueviolet;
+            }
+            100%{
+                transform: rotate(360deg) translateX(0) translateY(0px);
+                background-color:white;
+            }
+        }
+        @keyframes load2{
+            0% {
+                transform: rotate(0deg) translateX(0) translateY(0px);
+            }
+            6.66% {
+                transform: rotate(0deg) translateX(0) translateY(-80px);
+            }
+            73.32% {
+                transform: rotate(360deg) translateX(0) translateY(0px);
+                background-color:blueviolet;
+            }
+            100%{
+                transform: rotate(360deg) translateX(0) translateY(0px);
+                background-color:white;
+            }
+        }
+        @keyframes load3{
+            0% {
+                transform: rotate(0deg) translateX(0) translateY(0px);
+            }
+            13.32% {
+                transform: rotate(0deg) translateX(0) translateY(-80px);
+            }
+            79.98% {
+                transform: rotate(360deg) translateX(0) translateY(0px);
+                background-color:blueviolet;
+            }
+            100%{
+                transform: rotate(360deg) translateX(0) translateY(0px);
+                background-color:white;
+            }
+        }
+        @keyframes load4{
+            0% {
+                transform: rotate(0deg) translateX(0) translateY(0px);
+            }
+            19.98% {
+                transform: rotate(0deg) translateX(0) translateY(-80px);
+            }
+            86.64% {
+                transform: rotate(360deg) translateX(0) translateY(0px);
+                background-color:blueviolet;
+            }
+            100%{
+                transform: rotate(360deg) translateX(0) translateY(0px);
+                background-color:white;
+            }
+        }
+        @keyframes load5{
+            0% {
+                transform: rotate(0deg) translateX(0) translateY(0px);
+            }
+            26.64% {
+                transform: rotate(0deg) translateX(0) translateY(-80px);
+            }
+            93.3% {
+                transform: rotate(360deg) translateX(0) translateY(0px);
+                background-color:blueviolet;
+            }
+            100%{
+                transform: rotate(360deg) translateX(0) translateY(0px);
+                background-color:white;
+            }
+        }
+        #content{
+            display:none;
+        }
+    </style>                                                                        
+    <style>
+        body{
+            margin : 0px;
+            background-color: black;
+        }
+        #video1{
+            width:100vw;
+            max-height:91vh;
+            opacity:100%;
+        }
+        #mainimg{
+            position: absolute;
+            left:14vw;
+            top:3vw;
+            width:20vw;
+            /* animation: showImage 1.5s linear; */
+            z-index:2;
+        }
+        #card{
+            position:absolute;
+            z-index:3;
+            height:20vw;
+            width:35vw;
+            left:48vw;
+            top:27vw;
+            /* animation: card 2.5s linear; */
+        }
+        #access{
+            position:absolute;
+            display:none;
+            z-index:4;
+            font-size:15vw;
+            left:19vw;
+            top:9vw;
+            color:rgb(23, 179, 23);
+            margin:0vw;
+            text-shadow: 0 0 5px greenyellow,
+            0 0 10px greenyellow,
+            0 0 15px greenyellow,
+            0 0 20px greenyellow;
+            /* animation: accessg 1s linear;  */
+        }
+        #granted{
+            position:absolute;
+            display:none;
+            z-index:4;
+            font-size:15vw;
+            left:13vw;
+            top:23vw;
+            color:rgb(23, 179, 23);
+            margin:0vw;
+            text-shadow: 0 0 5px greenyellow,
+            0 0 10px greenyellow,
+            0 0 15px greenyellow,
+            0 0 20px greenyellow;
+            /* animation: accessg 1s linear;  */
+        }
+        @keyframes accessg{
+            0%{
+                text-shadow: 0 0 5px greenyellow;
+            }
+            33%{
+                text-shadow: 0 0 5px greenyellow,0 0 10px greenyellow,0 0 15px greenyellow,0 0 20px greenyellow; 
+            }
+            66%{
+                text-shadow: 0 0 5px greenyellow;
+            }
+            100%{
+                text-shadow: 0 0 5px greenyellow,0 0 10px greenyellow,0 0 15px greenyellow,0 0 20px greenyellow; 
+            }
+        }
+        @keyframes card{
+            0% {height:0vw;}
+            95%{height:0vw;}
+            100% {height:20vw;}
+        }
+        @keyframes showImage{
+            0% {
+                transform: scale(0);
+            }
+            90%{
+                transform: scale(0);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        @keyframes line{
+            0% {
+                width:0vw;
+            }
+            95%{
+                width:0vw;
+            }
+            100% {
+                width:35vw;
+            }
+        }
+        @keyframes line1{
+            0% {height:0vw;}
+            95%{height:0vw;}
+            100% {height:20vw;}
+        }
+        @keyframes line2{
+            0% {height:0vw;}
+            95%{height:0vw;}
+            100% {height:19.5vw;}
+        }
+        @keyframes line3{
+            0% {height:0vw;}
+            95%{height:0vw;}
+            100% {height:19vw;}
+        }
+        @keyframes line4{
+            0% {height:0vw;}
+            95%{height:0vw;}
+            100% {height:18.5vw;}
+        }
+        @keyframes line5{
+            0% {height:0vw;}
+            95%{height:0vw;}
+            100% {height:18vw;}
+        }
+        @keyframes line6{
+            0% {height:0vw;}
+            95%{height:0vw;}
+            100% {height:17.5vw;}
+        }
+        @keyframes line7{
+            0% {height:0vw;}
+            95%{height:0vw;}
+            100% {height:17vw;}
+        }
+        @keyframes line8{
+            0% {height:0vw;}
+            95%{height:0vw;}
+            100% {height:16.5vw;}
+        }
+        .hori{
+            width:35vw;
+            height:0.2vw;
+            position:absolute;
+            left:34vw;
+            top:8vw;
+            background-color: blue;
+            box-shadow: 0 0 5px #00f,
+            0 0 10px #00f;
+            z-index:1;
+            animation: line 2s linear;
+        }
+        .ver{
+            width:0.2vw;
+            position:absolute;
+            left:69vw;
+            top:8vw;
+            background-color: blue;
+            box-shadow: 0 0 5px #00f,
+                        0 0 10px #00f
+        }
+        #verticle1{
+            animation: line1 2.2s linear;
+            height:20vw;
+            top:8vw;
+            left:69vw;
+        }
+        #verticle2{
+            animation: line2 2.2s linear;
+            height:19.5vw;
+            top:8.5vw;
+            left:68.5vw;
+        }
+        #verticle3{
+            animation: line3 2.2s linear;
+            height:19vw;
+            top:9vw;
+            left:68vw;
+        }
+        #verticle4{
+            animation: line4 2.2s linear;
+            height:18.5vw;
+            top:9.5vw;
+            left:67.5vw;
+        }
+        #verticle5{
+            animation: line5 2.2s linear;
+            height:18vw;
+            top:10vw;
+            left:67vw;
+        }
+        #verticle6{
+            animation: line6 2.2s linear;
+            height:17.5vw;
+            top:10.5vw;
+            left:66.5vw;
+        }
+        #verticle7{
+            animation: line7 2.2s linear;
+            height:17vw;
+            top:11vw;
+            left:66vw;
+        }
+        #verticle8{
+            animation: line8 2.2s linear;
+            height:16.5vw;
+            top:11.5vw;
+            left:65.5vw;
+        }
+        #hori1{
+            left:34vw;
+            top:8vw;
+        }
+        #hori2{
+            left:33.5vw;
+            top:8.5vw;
+        }
+        #hori3{
+            left:33vw;
+            top:9vw;
+        }
+        #hori4{
+            left:32.5vw;
+            top:9.5vw;
+        }
+        #hori5{
+            left:32vw;
+            top:10vw;
+        }
+        #hori6{
+            left:31.5vw;
+            top:10.5vw;
+        }
+        #hori7{
+            left:31vw;
+            top:11vw;
+        }
+        #hori8{
+            left:30.5vw;
+            top:11.5vw;
+        }
+    </style>
+    <title>Shresth._.Sharma</title>
+    <link rel="stylesheet" type="text/css" href="css/top.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="shortcut icon" href="Images/logo.png">
+</head>
+<body style = 'color:white;'>
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+          e.preventDefault();
+        });
+        </script>
+        
+    <script>
+        document.addEventListener("keydown", function(event) {
+          if (event.ctrlKey && event.key === 'u') {
+            // alert("Ctrl+U Pressed!");
+            event.preventDefault();
+        }
+        
+        if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+            // alert("Ctrl+Shift+I Pressed!");
+            event.preventDefault();
+          }
+        });
+    </script>
+    <div id="loading">
+        <div id="l1" class="l"></div>
+        <div id="l2" class="l"></div>
+        <div id="l3" class="l"></div>
+        <div id="l4" class="l"></div>
+        <div id="l5" class="l"></div>
+    </div>
+    <div id="content">
+            <script>
+                if ('wakeLock' in navigator) {
+            navigator.wakeLock.request('screen').then((wakeLock) => {
+                // Your code here
+            });
+            }
+        </script>
+        <video id="video1" autoplay muted loop src="Images/hack.mp4"></video>
+        <img id="mainimg" src="Images/logo_max.jpg">
+        <img id="card" src="Images/card.png">
+        <h1 id="access">ACCESS</h1>
+        <h1 id="granted">GRANTED</h1>
+        <div id="hori1" class="hori"></div>
+        <div id="hori2" class="hori"></div>
+        <div id="hori3" class="hori"></div>
+        <div id="hori4" class="hori"></div>
+        <div id="hori5" class="hori"></div>
+        <div id="hori6" class="hori"></div>
+        <div id="hori7" class="hori"></div>
+        <div id="hori8" class="hori"></div>
+        <div id="verticle1" class="ver"></div>
+        <div id="verticle2" class="ver"></div>
+        <div id="verticle3" class="ver"></div>
+        <div id="verticle4" class="ver"></div>
+        <div id="verticle5" class="ver"></div>
+        <div id="verticle6" class="ver"></div>
+        <div id="verticle7" class="ver"></div>
+        <div id="verticle8" class="ver"></div>
+
+
+        <script>
+            function show(){
+                document.getElementById('access').style.display = 'block';
+                document.getElementById('granted').style.display = 'block';
+            }
+            function hide(){
+                document.getElementById('access').style.display = 'none';
+                document.getElementById('granted').style.display = 'none';
+            }
+            function blur(){
+                function delayedLoop() {
+                    let i = 50;
+                    setTimeout(show, 250)
+                    function loop() {
+                        if (i >= 0) {
+                            document.getElementById('mainimg').style.opacity = (i+50)+'%';
+                            document.getElementById('video1').style.opacity = (i+50)+'%';
+                            document.getElementById('card').style.opacity = (i+50)+'%';
+                            const elements = document.querySelectorAll('.ver');
+                            // Set the opacity for each element
+                            elements.forEach(function(element) {
+                                element.style.opacity = (i+50)+'%'; // Set the desiwhite opacity value (0.5 for 50% opacity)
+                            });
+                            const elements1 = document.querySelectorAll('.hori');
+                            // Set the opacity for each element
+                            elements1.forEach(function(element1) {
+                                element1.style.opacity = (i+50)+'%'; // Set the desiwhite opacity value (0.5 for 50% opacity)
+                            });
+                            i-=1;
+                            setTimeout(loop, 5); // Delay for 1 second (1000 milliseconds)
+                        }
+                    }
+                    
+                    loop(); // Start the loop
+                    }
+
+                    // Call the delayed loop function with the desiwhite number of iterations
+                delayedLoop(); // This will execute the loop 5 times with a 1-second delay between each iteration
+            }
+            function blur1(){
+                function delayedLoop() {
+                    let i = 50;
+                    setTimeout(hide, 100)
+                    function loop() {
+                        if (i >= -1) {
+                            document.getElementById('mainimg').style.opacity = (i)+'%';
+                            document.getElementById('video1').style.opacity = (i)+'%';
+                            document.getElementById('card').style.opacity = (i)+'%';
+                            const elements = document.querySelectorAll('.ver');
+                            // Set the opacity for each element
+                            elements.forEach(function(element) {
+                                element.style.opacity = (i)+'%'; // Set the desiwhite opacity value (0.5 for 50% opacity)
+                            });
+                            const elements1 = document.querySelectorAll('.hori');
+                            // Set the opacity for each element
+                            elements1.forEach(function(element1) {
+                                element1.style.opacity = (i)+'%'; // Set the desiwhite opacity value (0.5 for 50% opacity)
+                            });
+                            i-=1;
+                            setTimeout(loop, 5); // Delay for 1 second (1000 milliseconds)
+                        }
+                    }
+                    
+                    loop(); // Start the loop
+                    }
+
+                    // Call the delayed loop function with the desiwhite number of iterations
+                delayedLoop(); // This will execute the loop 5 times with a 1-second delay between each iteration
+            }
+            
+        </script>
+        <span id="nav">
+            <div>
+                <p id="name">Shresth._.Sharma</p>
+                <!-- <button class="navbt" id="signinbt" onclick="window.open('html/signin.html','_top')">Sign In</button> -->
+                <button class="navbt" id="themechangebt"><img src="Images/moon.png" id="themechangebtimg" onclick="changetheme()"></button>
+                <button class="navbt1" id="feedback" onclick="window.open('html/feedback.html','_top')">Feedback</button>
+                <button class="navbt1" id="mygear" onclick="window.open('html/mygear.html','_top')">My gear</button>
+                <button class="navbt1" id="contact" onclick="window.open('html/contact.html','_top')">Contact</button>
+                <button class="navbt1" id="about" onclick="window.open('html/about.html','_top')">About Me</button>
+                <button class="navbt1" id="home" onclick="window.open('pc.html','_top')">Home</button>
+            </div>
+        </span>
+        <br>
+        <br>
+        <br>
+        <div id="between">
+            <h1 id="between1">Welcome to</h1>
+            <h1 id="between2">Shresth._.Sharma Website</h1>
+            <h1 id="between3">Shresth._.Sharma Website</h1>
+        </div>
+        <img id="mainphoto" src="Images/photo.png">
+        <p id="games">Games</p>
+        <p id="gamesdes">Try the new latest games all by yourself. Try the online games as well as download the games for PC or Phone.The new revolutionary games without any gliches.</p>
+        <a><img id="gamesphoto" src="Images/games.png"></a>
+        <button id="gamesonbt" onclick="window.open('html/online.html','_top')">Online Games!</button>
+        <button id="gamesdwbt" onclick="window.open('html/downloadgame.html','_top')">Download!</button>
+        <p id="equ">Equation Solver</p>
+        <p id="equdes">Solve all the maths and physics equation in just a click. What will be the velocity? What is the gravity,etc.</p>
+        <a><img id="equphoto" src="Images/equation.png"></a>
+        <button id="solvebt" onclick="window.open('html/solve.html','_top')">Solve!</button>
+        <p id="edit">Edits!</p>
+        <p id="editdes">Check out my amazing edits and montages. The great sound, effect and high production quality</p>
+        <a><img id="editphoto" src="Images/edit.png"></a>
+        <button id="watchbt" onclick="window.open('html/watch.html','_top')">Watch!</button>
+        <span>
+            <div id="bottom">
+                <img id="bottomimg" src="Images/logo.png">
+                <p id="bottomname">Shresth._.Sharma</p>
+                <p id="bottomname2">|</p>
+                <p id="bottomname3">Copyright © 2023 Shresth._.Sharma</p>
+                <a href="https://www.instagram.com/Shresth.Sharma_/"><img id="bottominstaimg" src="Images/instaw.png"></a>
+                <a href="https://www.github.com/Shresth-Sharma-2008/"><img id="bottomgitimg" src="Images/gitw.png"></a>
+            </div>
+        </span>
+        <script src="js/main.js"></script>
+    </div>
+    <script>
+        // window.addEventListener('load', function(){
+        //     document.getElementById('loading').style.display = 'none';
+        //     document.getElementById('content').style.display = 'block';
+        // });
+        // window.onload = function(){
+                // document.getElementById('loading').style.display = 'none';
+                // document.getElementById('content').style.display = 'block';
+        // }
+        // Find your video element by its ID or any other method you prefer
+        const videoElement = document.getElementById('video1');
+
+        // Function to run when the video is completely loaded
+        function onVideoLoaded() {
+            // alert('now')
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+            document.getElementById('mainimg').style.animation = 'showImage 1.5s linear';
+            document.getElementById('card').style.animation = 'card 2.5s linear';
+            document.getElementById('access').style.animation = 'accessg 1s linear';
+            document.getElementById('granted').style.animation = 'accessg 1s linear';
+            document.body.style.overflowY = 'visible';
+            // document.getElementsByClassName('hori')[0].style.animation = 'line 2s linear'
+            setTimeout(blur, 2700)
+            setTimeout(blur1, 3500)
+            console.log("The video is completely loaded.");
+        }
+
+        // Attach the event listeners to the video element
+        videoElement.addEventListener('loadedmetadata', function() {
+            // This event is fiwhite when the video's metadata is loaded
+            console.log("Video metadata is loaded.");
+        });
+
+        videoElement.addEventListener('loadeddata', function() {
+            // This event is fiwhite when the video's data is loaded
+            console.log("Video data is loaded.");
+            
+            // Now, the video is completely loaded, so you can execute your code
+            onVideoLoaded();
+        });
+
+    </script>
+</body>
+</html>

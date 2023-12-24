@@ -1,0 +1,71 @@
+#contactme{
+    position:absolute;
+    top:23vh;
+    font-size:10vw;
+    left:20vw;
+}
+#myphoto{
+    position: absolute;
+    top:35vh;
+    left:30vw;
+}
+#instaimg{
+    position: absolute;
+    top:65vh;
+    left:25vw;
+}
+#gitimg{
+    position: absolute;
+    top:65vh;
+    left:50vw;
+}
+#bottom{
+    position: absolute;
+    top:80vh;
+    padding-top:1vh;
+    padding-bottom:2vw;
+    min-width:98vw;
+    min-height:6vh;
+    margin-left:1vw;
+    margin-right:1vw
+}
+#bottomimg{
+    position: absolute;
+    display:inline-block;
+    width:10vw;
+    left:5vw;
+    margin-left:0px;
+    margin-right:0px;
+    padding-bottom:3vh;
+}
+#bottomname{
+    position: absolute;
+    display:inline-block;
+    font-size:4vw;
+    color:blueviolet;
+    margin-top:0.5vw;
+    margin-left:1vw;
+    left:18vw;
+}
+#bottomname3{
+    position: absolute;
+    display:inline-block;
+    color:gray;
+    font-size:2vw;
+    margin-top:6vw;
+    left:19.5vw;
+}
+#bottominstaimg{
+    display:inline-block;
+    position: absolute;
+    left:63vw;
+    width:8vw;
+    margin-top:0.75vh;
+}
+#bottomgitimg{
+    display:inline-block;
+    position: absolute;
+    left:75vw;
+    width:8vw;
+    margin-top:0.75vh;
+}

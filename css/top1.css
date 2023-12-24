@@ -1,0 +1,132 @@
+@font-face {
+    font-family: presidium;
+    src: url(../fonts/presidium.ttf);
+}
+#nav{
+    position:fixed;
+    left:0px;
+    margin:0;
+    top:0px;
+    min-width:100vw;
+    max-height:20vh;
+    padding-top:0px;
+    border-style:solid;
+    border-width:0.1vw;
+    z-index:10;
+}
+#name{
+    display:inline-block;
+    font-size:6vw;
+    font-family: presidium;
+    color:blueviolet;
+    position:static;
+    padding-top:2vw;
+    padding-bottom:1vw;
+    padding-left:2vw;
+    padding-right:2vw;
+    margin:0;
+}
+.navbt{
+    background-color:blueviolet;
+    position:absolute;
+    display:inline-block;
+    border-style:none;
+    padding-top:1vw;
+    padding-bottom:2vw;
+    padding-left:2vw;
+    padding-right:2vw;
+    margin-top:1vw;
+    margin-bottom:1vw;
+    font-size:1vw;
+    width:10vw;
+    height:5vw;
+    top:2vw;
+    font-size:2.5vw;
+}
+.navbt1{
+    background-color:blueviolet;
+    position:absolute;
+    display:inline-block;
+    border-style:none;
+    padding-top:1vw;
+    padding-bottom:2vw;
+    padding-left:2vw;
+    padding-right:2vw;
+    margin-top:1vw;
+    margin-bottom:1vw;
+    font-size:1vw;
+    width:20vw;
+    height:5vw;
+    top:2vw;
+    font-size:2.5vw;
+}
+#home{
+    right:14vw;
+}
+#menudw{
+    display:none;
+}
+
+#menu:hover #menudw{
+    display:block;
+}
+#menu1{
+    right:28vw;
+}
+#contact{
+    position:absolute;
+    top:4.5vh;
+    right:22vw;
+}
+#about{
+    position:absolute;
+    top:7.5vh;
+    right:22vw;
+}
+#feedback{
+    position:absolute;
+    top:10.5vh;
+    right:22vw;
+}
+#gear{
+    position:absolute;
+    top:13.5vh;
+    right:22vw;
+}
+#signin{
+    position:absolute;
+    top:16.5vh;
+    right:22vw;
+}
+#theme{
+    position:absolute;
+    float:right;
+    background:none;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-right:0px;
+    margin-left:0px;
+    right:3vw;
+}
+#themeimg{
+    width:6vw;
+}
+#between{
+    position:absolute;
+    top:8vh;
+    left:5vw;
+    font-size:2vw;
+    color:white;
+}
+#welcome{
+    color:blueviolet;
+}
+#name2{
+    color:blueviolet;
+}
+#img{
+    position:absolute;
+    top:8vh;
+    right:3vw;
+    width:40vw;
+}

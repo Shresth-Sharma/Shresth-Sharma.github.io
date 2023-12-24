@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Shresth._.Sharma</title>
+        <link rel="stylesheet" type="text/css" href="../css/top.css">
+        <link rel="stylesheet" type="text/css" href="../css/mygear.css">
+        <link rel="shortcut icon" href="../Images/logo.png">
+    </head>
+    <body style = 'color:white;'>
+        <script>
+            document.addEventListener('contextmenu', function(e) {
+              e.preventDefault();
+            });
+            </script>
+            
+        <script>
+            document.addEventListener("keydown", function(event) {
+              if (event.ctrlKey && event.key === 'u') {
+                // alert("Ctrl+U Pressed!");
+                event.preventDefault();
+            }
+            
+            if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+                // alert("Ctrl+Shift+I Pressed!");
+                event.preventDefault();
+              }
+            });
+        </script>
+        <span id="nav">
+            <div>
+                <p id="name">Shresth._.Sharma</p>
+                <!-- <button class="navbt" id="signinbt" onclick="window.open('../html/signin.html','_top')">Sign In</button> -->
+                <button class="navbt" id="themechangebt"><img src="../Images/moon.png" id="themechangebtimg" onclick="changetheme()"></button>
+                <button class="navbt1" id="feedback" onclick="window.open('../html/feedback.html','_top')">Feedback</button>
+                <button class="navbt1" id="mygear" onclick="window.open('../html/mygear.html','_top')">My gear</button>
+                <button class="navbt1" id="contact" onclick="window.open('../html/contact.html','_top')">Contact</button>
+                <button class="navbt1" id="about" onclick="window.open('../html/about.html','_top')">About Me</button>
+                <button class="navbt1" id="home" onclick="window.open('../pc.html','_top')">Home</button>
+            </div>
+        </span>
+        <br>
+        <br>
+        <br>
+        <div id="between">
+            <h1 id="between1">Welcome to</h1>
+            <h1 id="between2">Shresth._.Sharma Gear</h1>
+            <h1 id="between3">Shresth._.Sharma Website</h1>
+        </div>
+        <img id="mainphoto" src="../Images/photo.png">
+        <span>
+            <div id="bottom">
+                <img id="bottomimg" src="../Images/logo.png">
+                <p id="bottomname">Shresth._.Sharma</p>
+                <p id="bottomname2">|</p>
+                <p id="bottomname3">Copyright © 2023 Shresth._.Sharma</p>
+                <a href="https://www.instagram.com/Shresth.Sharma_/"><img id="bottominstaimg" src="../Images/instaw.png"></a>
+                <a href="https://www.github.com/Shresth-Sharma-2008/"><img id="bottomgitimg" src="../Images/gitw.png"></a>
+            </div>
+        </span>
+        <img id="pc" src="../Images/pc.png">
+        <h2 id="pc1">HP Probook 6570b</h2>
+        <img id="phone" src="../Images/mobile.png">
+        <h2 id="phone1">Samsung GT-i1827</h2>
+        <img id="keyboard" src="../Images/keyboard.png">
+        <h2 id="keyboard1">TVS Gold Prime Wireless Mechanical</h2>
+        <img id="cpu" src="../Images/cpu.jpg">
+        <h2 id="cpu1">i5 11th Gen Dual Core</h2>
+        <img id="ram" src="../Images/ram.png">
+        <h2 id="ram1">2x2GB DDR3</h2>
+        <img id="graphic" src="../Images/graphics card.png">
+        <h2 id="graphic1">Intel HD 4000</h2>
+        <img id="mouse" src="../Images/mouse.png">
+        <h2 id="mouse1">Allen optical mouse</h2>
+        <img id="ssd" src="../Images/ssd.png">
+        <h2 id="ssd1">512GB SSD</h2>
+        <img id="sys" src="../Images/syskabt.png">
+        <h2 id="sys1">SYSKA-BT130 speaker</h2>
+        <script src="../js/mygear.js"></script>
+    </body>
+</html>

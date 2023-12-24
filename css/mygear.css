@@ -1,0 +1,162 @@
+#pc{
+    position:absolute;
+    top:75vh;
+    width:27vw;
+    height:27vw;
+    left:4vw;
+}
+#pc1{
+    position: absolute;
+    top:130vh;
+    left:10vw;
+}
+#phone{
+    position:absolute;
+    top:75vh;
+    width:27vw;
+    height:27vw;
+    left:35vw;
+}
+#phone1{
+    position: absolute;
+    top:130vh;
+    left:41vw;
+}
+#keyboard{
+    position:absolute;
+    top:75vh;
+    width:27vw;
+    height:27vw;
+    left:66vw;
+}
+#keyboard1{
+    position: absolute;
+    top:130vh;
+    left:69vw;
+}
+#cpu{
+    position:absolute;
+    top:145vh;
+    width:27vw;
+    height:27vw;
+    left:4vw;
+}
+#cpu1{
+    position: absolute;
+    top:200vh;
+    left:10vw;
+}
+#ram{
+    position:absolute;
+    top:145vh;
+    width:27vw;
+    height:27vw;
+    left:35vw;
+}
+#ram1{
+    position: absolute;
+    top:200vh;
+    left:41vw;
+}
+#graphic{
+    position:absolute;
+    top:145vh;
+    width:27vw;
+    height:27vw;
+    left:66vw;
+}
+#graphic1{
+    position: absolute;
+    top:200vh;
+    left:72vw;
+}
+#mouse{
+    position:absolute;
+    top:210vh;
+    width:27vw;
+    height:27vw;
+    left:4vw;
+}
+#mouse1{
+    position: absolute;
+    top:265vh;
+    left:10vw;
+}
+#ssd{
+    position:absolute;
+    top:210vh;
+    width:27vw;
+    height:27vw;
+    left:35vw;
+}
+#ssd1{
+    position: absolute;
+    top:265vh;
+    left:41vw;
+}
+#sys{
+    position:absolute;
+    top:210vh;
+    width:27vw;
+    height:27vw;
+    left:66vw;
+}
+#sys1{
+    position: absolute;
+    top:265vh;
+    left:69vw;
+}
+#bottom{
+    position: absolute;
+    top:280vh;
+    padding-bottom:4vw;
+    padding-top:1vw;
+    /* background-color: blue; */
+    min-width:99vw;
+    margin-left:-1vw;
+    margin-right:0px;
+}
+#bottomimg{
+    position: absolute;
+    display:inline-block;
+    width:3vw;
+    left:15vw;
+    margin-left:0px;
+    margin-right:0px;
+}
+#bottomname{
+    position: absolute;
+    display:inline-block;
+    font-size:2vw;
+    color:blueviolet;
+    margin-top:0.5vw;
+    margin-left:1vw;
+    left:18vw;
+}
+#bottomname2{
+    position: absolute;
+    display:inline-block;
+    font-size:3vw;
+    margin-top:-0.5vw;
+    left:36vw;
+}
+#bottomname3{
+    position: absolute;
+    display:inline-block;
+    color:gray;
+    font-size:1vw;
+    margin-top:1vw;
+    left:39vw;
+}
+#bottominstaimg{
+    display:inline-block;
+    position: absolute;
+    left:70vw;
+    width:3vw;
+}
+#bottomgitimg{
+    display:inline-block;
+    position: absolute;
+    left:75vw;
+    width:3vw;
+}
