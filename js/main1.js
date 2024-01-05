@@ -24,36 +24,36 @@ if(getCookie('theme')==null){
 console.log(getCookie('theme'))
 if(getCookie('theme')=='1'){
     theme = 'black'
-    document.getElementById('themeimg').src = '../Images/sun.png';
-    document.getElementById('bottominstaimg').src = '../Images/instaw.png';
-    document.getElementById('bottomgitimg').src = '../Images/gitw.png';
+    document.getElementById('themeimg').src = '../Shresth-Sharma-4/Images/sun.png';
+    document.getElementById('bottominstaimg').src = '../Shresth-Sharma-4/Images/instaw.png';
+    document.getElementById('bottomgitimg').src = '../Shresth-Sharma-4/Images/gitw.png';
     revtheme = 'white'
 }
 else{
     theme = 'white'
-    document.getElementById('themeimg').src = '../Images/moon.png'; 
+    document.getElementById('themeimg').src = '../Shresth-Sharma-4/Images/moon.png'; 
  
-    document.getElementById('bottominstaimg').src = '../Images/instab.png';
-    document.getElementById('bottomgitimg').src = '../Images/gitb.png';
+    document.getElementById('bottominstaimg').src = '../Shresth-Sharma-4/Images/instab.png';
+    document.getElementById('bottomgitimg').src = '../Shresth-Sharma-4/Images/gitb.png';
     revtheme = 'black'
 }
 changetheme()
 function changetheme(){
     if(theme == 'black'){
         theme = 'white'
-        document.getElementById('themeimg').src = '../Images/moon.png'; 
+        document.getElementById('themeimg').src = '../Shresth-Sharma-4/Images/moon.png'; 
        
-        document.getElementById('bottominstaimg').src = '../Images/instaw.png';
-        document.getElementById('bottomgitimg').src = '../Images/gitw.png';
+        document.getElementById('bottominstaimg').src = '../Shresth-Sharma-4/Images/instaw.png';
+        document.getElementById('bottomgitimg').src = '../Shresth-Sharma-4/Images/gitw.png';
         revtheme = 'black'
         setCookie('theme','1',365)
     }
     else{
         theme = 'black'
-        document.getElementById('themeimg').src = '../Images/sun.png';
+        document.getElementById('themeimg').src = '../Shresth-Sharma-4/Images/sun.png';
         
-        document.getElementById('bottominstaimg').src = '../Images/instab.png';
-        document.getElementById('bottomgitimg').src = '../Images/gitb.png';
+        document.getElementById('bottominstaimg').src = '../Shresth-Sharma-4/Images/instab.png';
+        document.getElementById('bottomgitimg').src = '../Shresth-Sharma-4/Images/gitb.png';
         revtheme = 'white'
         setCookie('theme','0',365)
     }
