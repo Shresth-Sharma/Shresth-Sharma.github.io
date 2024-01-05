@@ -78,6 +78,9 @@
                     console.log("Geolocation is not available in this browser.");
                 }
         }
+        else{
+            redirect()
+        }
         function redirect(){
             if (a.includes('Android') || a.includes('webOS') || a.includes('iPhone') || a.includes('iPad') || a.includes('iPod') || a.includes('BlackBerry') || a.includes('Windows Phone')){
                 b = true 
