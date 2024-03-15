@@ -4,11 +4,14 @@
 }
 *{
     cursor: url('../Images/cursor.cur'), auto;
-    overflow-x: hidden;
+    
 }
 * button:hover{
     cursor: url('../Images/cursor1.png'), auto;
 } 
+body{
+    overflow-x: hidden;
+}
 #nav{
     position:fixed;
     left:0px;
