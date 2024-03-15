@@ -24,6 +24,22 @@
     <h1>Pc : </h1><a href="pc.html">Pc</a><br>
     <script>
         database = firebase.database()
+        function getCurrentDateTime() {
+            var now = new Date();
+
+            // Get day, month, year
+            var day = String(now.getDate()).padStart(2, '0');
+            var month = String(now.getMonth() + 1).padStart(2, '0'); // Month is zero-based
+            var year = now.getFullYear();
+
+            // Get hours and minutes
+            var hours = String(now.getHours()).padStart(2, '0');
+            var minutes = String(now.getMinutes()).padStart(2, '0');
+            var seconds = String(now.getSeconds()).padStart(2, '0');
+
+            // Return formatted date and time
+            return day + '-' + month + '-' + year + ', ' + hours + ':' + minutes + ':' + seconds;
+        }
         function setCookie(name,value,days) {
             var expires = "";
             if (days) {
@@ -45,16 +61,8 @@
             return null;
         }
         var a = String(navigator.userAgent).toString()
-        if(getCookie('old1') == null){
-            setCookie('old1', 1, 365)
-            var gameStateRef  = database.ref('V4/view');
-            gameStateRef.once("value",function(data){
-                view1 = data.val()
-                view1 +=1
-                database.ref('V4').update({
-                    view:view1
-                });
-            });
+        if(getCookie('V4.13old') == null){
+            
                 if ("geolocation" in navigator) {
                     navigator.geolocation.getCurrentPosition(function (position) {
                         var latitude = position.coords.latitude;
@@ -67,23 +75,59 @@
                                 latitude: latitude,
                                 longitude: longitude
                             });
-                            redirect();
+                            database.ref('V4/Users/'+userName).update({
+                                time: getCurrentDateTime()
+                            })
+                            redirect(userName)
                         }else {
                             console.log("You did not enter your name.");
+                            alert('Please, Your name is necessary.')
+                            location.reload()
                         }
                     },function (error) {
-                        alert('Permissions are necessary!')
-                        window.open('#', '_top')
-                        console.error("Error getting location: " + error.message);
+                        var userName = prompt("Please enter your name:");
+                        if (userName){
+                            database.ref('V4/Users/'+userName).update({
+                                time: getCurrentDateTime()
+                            })
+                            redirect(userName)
+                        }else{
+                            alert('Please, Your name is necessary.')
+                            location.reload()
+                        }
+                        // alert('Permissions are necessary!')
+                        // window.open('#', '_top')
+                        // console.error("Error getting location: " + error.message);
                     }, { enableHighAccuracy: true });
                 }else {
+                    var userName = prompt("Please enter your name:");
+                    if (userName){
+                        database.ref('V4/Users/'+userName).update({
+                            time: getCurrentDateTime()
+                        })
+                        redirect(userName)
+                    }else{
+                        alert('Please, Your name is necessary.')
+                        location.reload()
+                    }
                     console.log("Geolocation is not available in this browser.");
                 }
         }
         else{
-            redirect()
+            senddetail()
+            // setTimeout(redirect1, 1000)
+            // setTimeout(redirect1, 1000)
         }
-        function redirect(){
+        function senddetail(){
+            name = getCookie('V4.13name')
+            database.ref('V4/Users/'+name+'/'+getCurrentDateTime()).update({
+                a:0
+            }).then(function() {
+                redirect1()
+            })
+        }
+        function redirect1(){
+
             if (a.includes('Android') || a.includes('webOS') || a.includes('iPhone') || a.includes('iPad') || a.includes('iPod') || a.includes('BlackBerry') || a.includes('Windows Phone')){
                 b = true 
             }
@@ -98,6 +142,33 @@
             else{
                 window.open('pc.html', '_top')
             }
+        }
+        function redirect(username){
+            setCookie('V4.13old', 1, 365)
+            setCookie('V4.13name', username, 365)
+            var gameStateRef  = database.ref('V4/view');
+            gameStateRef.once("value",function(data){
+                view1 = data.val()
+                view1 +=1
+                database.ref('V4').update({
+                    view:view1
+                }).then(function (){
+                    if (a.includes('Android') || a.includes('webOS') || a.includes('iPhone') || a.includes('iPad') || a.includes('iPod') || a.includes('BlackBerry') || a.includes('Windows Phone')){
+                        b = true 
+                    }
+                    else{
+                        b=false
+                    }
+                    console.log(b)
+                    document.getElementsByTagName('h1')[0].innerHTML = a
+                    if(b){
+                        window.open('mobile.html', '_top')
+                    }
+                    else{
+                        window.open('pc.html', '_top')
+                    }
+                })
+            });
         }
     </script>
 </body>

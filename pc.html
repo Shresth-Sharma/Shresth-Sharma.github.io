@@ -12,6 +12,8 @@
             left:50%;
             top:50%;
             transform: translate(-50%, -50%);
+            z-index:5;
+            /* background-color:blue; */
         }
         .l{
             position:absolute;
@@ -550,6 +552,8 @@
         const videoElement = document.getElementById('video1');
 
         // Function to run when the video is completely loaded
+        document.getElementById('loading').style.display = 'block';
+        console.log(document.getElementById('loading').style.display)
         function onVideoLoaded() {
             // alert('now')
             document.getElementById('loading').style.display = 'none';
@@ -576,7 +580,7 @@
             console.log("Video data is loaded.");
             
             // Now, the video is completely loaded, so you can execute your code
-            onVideoLoaded();
+            setTimeout(onVideoLoaded, 1500);
         });
 
     </script>
