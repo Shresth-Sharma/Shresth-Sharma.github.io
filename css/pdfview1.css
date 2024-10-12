@@ -1,0 +1,79 @@
+#maintext{
+    position: absolute;
+    top:25vh;
+    font-size:4vw;
+    margin-left:3vw;
+    margin-right:3vw;
+}
+b{
+    color:blueviolet;
+    text-decoration: underline;
+    text-decoration-color:blueviolet;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+#pdf-container {
+    width: 95%;
+    /* max-width: 800px; */
+    /* margin: auto; */
+    overflow: scroll;
+    max-height:78vh;
+    margin-top:6vh;
+    margin-left:4vw;
+    padding-right:-5vw;
+}
+.pdf-page {
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+#bottom{
+    position: absolute;
+    top:85vh;
+    padding-top:1vh;
+    padding-bottom:2vw;
+    min-width:98vw;
+    min-height:6vh;
+    margin-left:1vw;
+    margin-right:1vw
+}
+#bottomimg{
+    position: absolute;
+    display:inline-block;
+    width:10vw;
+    left:5vw;
+    margin-left:0px;
+    margin-right:0px;
+    padding-bottom:3vh;
+}
+#bottomname{
+    position: absolute;
+    display:inline-block;
+    font-size:4vw;
+    color:blueviolet;
+    margin-top:0.5vw;
+    margin-left:1vw;
+    left:18vw;
+}
+#bottomname3{
+    position: absolute;
+    display:inline-block;
+    color:gray;
+    font-size:2vw;
+    margin-top:6vw;
+    left:19.5vw;
+}
+#bottominstaimg{
+    display:inline-block;
+    position: absolute;
+    left:63vw;
+    width:8vw;
+    margin-top:0.75vh;
+}
+#bottomgitimg{
+    display:inline-block;
+    position: absolute;
+    left:75vw;
+    width:8vw;
+    margin-top:0.75vh;
+}
